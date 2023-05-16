@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <a ui-sref="peliculaedit({id: vm.id})">
+    <img src="{{ vm.poster }}" style="width: 300px" />
+  </a>
+  <div>
+    <p>{{ vm.name }} ({{ vm.year }})</p>
+    <p>{{ vm.director }}</p>
+    <button class="btn btn-sm btn-default" ng-click="vm.borrarPelicula(vm.id)">
+      Delete pelicula
+    </button>
+  </div>
+</div>
